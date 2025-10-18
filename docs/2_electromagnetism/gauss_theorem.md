@@ -13,7 +13,7 @@ He sought to **relate what happens inside a volume** to **what happens on its su
 Later, **James Clerk Maxwell** incorporated Gauss’s ideas into his famous **Maxwell’s Equations**, forming the foundation of classical electromagnetism.  
 In short, Gauss gave us a mathematical bridge between the **microscopic world (charges)** and the **macroscopic world (fields)**.
 
-![Carl Friedrich Gauss](./img/Carl_Friedrich_Gauss.jpg)
+![Carl Friedrich Gauss](https://upload.wikimedia.org/wikipedia/commons/6/6f/Carl_Friedrich_Gauss.jpg)
 
 ---
 
