@@ -13,8 +13,6 @@ He sought to **relate what happens inside a volume** to **what happens on its su
 Later, **James Clerk Maxwell** incorporated Gauss’s ideas into his famous **Maxwell’s Equations**, forming the foundation of classical electromagnetism.  
 In short, Gauss gave us a mathematical bridge between the **microscopic world (charges)** and the **macroscopic world (fields)**.
 
-![Carl Friedrich Gauss](https://upload.wikimedia.org/wikipedia/commons/6/6f/Carl_Friedrich_Gauss.jpg)
-
 ---
 
 ## 🧠 What Is Gauss’s Theorem?
@@ -23,9 +21,9 @@ The **Divergence Theorem** (or **Gauss’s Theorem**) states that:
 
 > The total flux of a vector field through a closed surface equals the total divergence inside that surface.
 
-\[
+$$
 \oint_S \vec{F} \cdot d\vec{S} = \iiint_V (\nabla \cdot \vec{F}) \, dV
-\]
+$$
 
 Where:
 - \( \vec{F} \): Vector field (e.g., electric field)
@@ -34,9 +32,9 @@ Where:
 
 In **electrostatics**, this becomes:
 
-\[
+$$
 \oint_S \vec{E} \cdot d\vec{S} = \frac{Q_{\text{inside}}}{\varepsilon_0}
-\]
+$$
 
 It means the **electric field leaving a surface** is directly linked to the **charge inside** it.
 
@@ -70,54 +68,115 @@ That’s how we “count” the invisible field!
 
 ## ⚙️ Essential Symbols & Formulas for Gauss’s Theorem
 
-| Symbol | Meaning | Formula & Context |
-|--------|----------|------------------|
-| **E** | Electric field (intensity) | \( E = \frac{1}{4\pi\varepsilon_0} \frac{Q}{r^2} \) — for a point charge outside a sphere. |
-| **Q** | Total enclosed charge | Appears in Gauss’s Law: \( \Phi = \frac{Q_{\text{inside}}}{\varepsilon_0} \). |
-| **ρ (rho)** | Volume charge density (C/m³) | \( Q = \iiint_V \rho \, dV \). |
-| **λ (lambda)** | Linear charge density (C/m) | \( E = \frac{\lambda}{2\pi\varepsilon_0 r} \) — for an infinite wire. |
-| **σ (sigma)** | Surface charge density (C/m²) | \( E = \frac{\sigma}{2\varepsilon_0} \) — for an infinite plane. |
-| **ε₀ (epsilon-zero)** | Vacuum permittivity | \( \varepsilon_0 = 8.854 \times 10^{-12}\ \text{F/m} \). |
-| **r** | Radial distance | Distance from the center of symmetry. |
-| **∮ E · dS** | Electric flux through a closed surface | \( \oint_S \vec{E} \cdot d\vec{S} = \frac{Q_{\text{inside}}}{\varepsilon_0} \). |
-| **∇ · E** | Divergence of the electric field | \( \nabla \cdot \vec{E} = \frac{\rho}{\varepsilon_0} \). |
-| **Sphere (r > R)** | Field outside a uniform sphere | \( E = \frac{1}{4\pi\varepsilon_0} \frac{Q}{r^2} \). |
-| **Sphere (r < R)** | Field inside a conducting sphere | \( E = 0 \). |
-| **Infinite Line Charge** | Cylindrical symmetry | \( E(r) = \frac{\lambda}{2\pi\varepsilon_0 r} \). |
-| **Infinite Plane Sheet** | Planar symmetry | \( E = \frac{\sigma}{2\varepsilon_0} \). |
+| Symbol | Meaning |
+|--------|---------|
+| **E** | Electric field (intensity) |
+| **Q** | Total enclosed charge |
+| **ρ (rho)** | Volume charge density (C/m³) |
+| **λ (lambda)** | Linear charge density (C/m) |
+| **σ (sigma)** | Surface charge density (C/m²) |
+| **ε₀ (epsilon-zero)** | Vacuum permittivity |
+| **r** | Radial distance |
+| **∮ E · dS** | Electric flux through a closed surface |
+| **∇ · E** | Divergence of the electric field |
+| **Sphere (r > R)** | Field outside a uniform sphere |
+| **Sphere (r < R)** | Field inside a conducting sphere |
+| **Infinite Line Charge** | Cylindrical symmetry |
+| **Infinite Plane Sheet** | Planar symmetry |
+
+---
+
+### ✅ Formulas (GitHub-safe)
+
+- **E** — Electric field (intensity)  
+$$
+E = \frac{1}{4 \pi \varepsilon_0} \frac{Q}{r^2}
+$$
+For a point charge outside a sphere.
+
+- **Q** — Total enclosed charge  
+$$
+\Phi = \frac{Q_{\text{inside}}}{\varepsilon_0}
+$$
+Appears in Gauss’s Law.
+
+- **ρ (rho)** — Volume charge density (C/m³)  
+$$
+Q = \iiint_V \rho \, dV
+$$
+
+- **λ (lambda)** — Linear charge density (C/m)  
+$$
+E = \frac{\lambda}{2 \pi \varepsilon_0 r}
+$$
+For an infinite wire.
+
+- **σ (sigma)** — Surface charge density (C/m²)  
+$$
+E = \frac{\sigma}{2 \varepsilon_0}
+$$
+For an infinite plane.
 
 ---
 
 ## 📘 Fundamental Relations & Geometric Formulas
 
-To use Gauss’s Law effectively, remember these relationships between **field**, **flux**, **charge**, and **geometry**.
-
 ### ⚡ Core Equations
 
-| Formula | Meaning |
-|----------|----------|
-| \( \Phi = E \times A \) | Electric flux through a uniform surface. |
-| \( \Phi = \oint_S \vec{E} \cdot d\vec{S} \) | Electric flux through a general closed surface. |
-| \( \Phi = \frac{Q_{\text{inside}}}{\varepsilon_0} \) | Gauss’s Law. |
-| \( Q = \rho \times V \) | Total charge in a volume. |
-| \( Q = \sigma \times A \) | Charge for a surface distribution. |
-| \( Q = \lambda \times L \) | Charge for a line distribution. |
-| \( E = \frac{Q_{\text{inside}}}{\varepsilon_0 A} \) | Simplified field for uniform flux. |
+- Electric flux through a uniform surface:  
+$$
+\Phi = E \times A
+$$
+
+- Electric flux through a general closed surface:  
+$$
+\Phi = \oint_S \vec{E} \cdot d\vec{S}
+$$
+
+- Gauss’s Law:  
+$$
+\Phi = \frac{Q_{\text{inside}}}{\varepsilon_0}
+$$
+
+- Total charge in a volume:  
+$$
+Q = \rho \times V
+$$
+
+- Charge for a surface distribution:  
+$$
+Q = \sigma \times A
+$$
+
+- Charge for a line distribution:  
+$$
+Q = \lambda \times L
+$$
+
+- Simplified field for uniform flux:  
+$$
+E = \frac{Q_{\text{inside}}}{\varepsilon_0 A}
+$$
 
 ---
 
 ### 📐 Useful Geometric Formulas
 
-| Shape | Quantity | Formula |
-|--------|-----------|----------|
-| **Sphere** | Surface area | \( A = 4\pi R^2 \) |
-| | Volume | \( V = \frac{4}{3}\pi R^3 \) |
-| **Cylinder** | Lateral area | \( A_{\text{side}} = 2\pi r L \) |
-| | Total area | \( A_{\text{total}} = 2\pi r L + 2\pi r^2 \) |
-| | Volume | \( V = \pi r^2 L \) |
-| **Cube / Box** | Area | \( A = 6a^2 \) |
-| | Volume | \( V = a^3 \) |
-| **Plane** | Area | Defined as the chosen finite region. |
+- Sphere:  
+  - Surface area: $$A = 4 \pi R^2$$  
+  - Volume: $$V = \frac{4}{3} \pi R^3$$
+
+- Cylinder:  
+  - Lateral area: $$A_{\text{side}} = 2 \pi r L$$  
+  - Total area: $$A_{\text{total}} = 2 \pi r L + 2 \pi r^2$$  
+  - Volume: $$V = \pi r^2 L$$
+
+- Cube / Box:  
+  - Area: $$A = 6 a^2$$  
+  - Volume: $$V = a^3$$
+
+- Plane:  
+  - Area: defined as the chosen finite region.
 
 ---
 
