@@ -39,5 +39,5 @@ Feel free to use, share, and build upon it.
 
 ---
 
-### ✨ Created by Bruce Wayne (a.k.a. Batman)
+### ✨ Created by @byborh
 > “To understand the universe, you must first understand its laws.” — A. Einstein
