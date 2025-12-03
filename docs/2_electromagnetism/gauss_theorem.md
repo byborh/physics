@@ -192,4 +192,4 @@ $$
 
 ✨ **In short:**  
 Everything in Gauss’s Theorem boils down to three ideas —  
-**How much is inside (Q), how big is the surface (A), and how the field flows (E).**
+**How much is inside (Q)**, **how big is the surface (A)**, **and how the field flows (E).**
